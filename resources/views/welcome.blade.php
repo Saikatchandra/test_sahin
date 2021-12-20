@@ -83,6 +83,7 @@
                 },
                 success: function(data) {
                     console.log(data.district);
+                    $(".district").empty();
                     $.each(data.district, function(key, item) {
                         // console.log('sd', item);
                         $(".district").append("<option value='" + item.id + "'>" + item.name +
